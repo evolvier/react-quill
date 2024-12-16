@@ -99,7 +99,6 @@ class Editor extends React.Component {
               value={this.state.value}
               readOnly={this.state.readOnly}
               onChange={this.onEditorChange}
-              onChangeSelection={this.onEditorChangeSelection}
             />
           )}
         </div>
