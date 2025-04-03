@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>React Quill Editor</title>
-    <link rel="stylesheet" href="quill.snow.css" />
+    <title>React Quill Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/react-quill@1.3.5/dist/quill.snow.css" rel="stylesheet">
     <style>
       .ql-toolbar:after {
         clear: none !important;
@@ -13,25 +13,17 @@
   <body>
     <div id="app"></div>
 
-    <!-- React and ReactDOM -->
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- React + ReactDOM via JSDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js" crossorigin="anonymous"></script>
 
-    <!-- Babel for JSX transpilation -->
+    <!-- Babel for JSX -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-    <!-- React Quill (make sure it's hosted correctly or use CDN below) -->
-    <script src="react-quill.js"></script>
-    <!-- Alternative (CDN version for test): -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/react-quill@1.3.5/dist/react-quill.min.js"></script> -->
+    <!-- ReactQuill -->
+    <script src="https://cdn.jsdelivr.net/npm/react-quill@1.3.5/dist/react-quill.min.js"></script>
 
-    <!-- Your React JSX app -->
+    <!-- Your JSX -->
     <script type="text/babel" src="index.js"></script>
   </body>
 </html>
