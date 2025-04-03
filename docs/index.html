@@ -1,23 +1,37 @@
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="quill.snow.css" />
-  <style>
-    .ql-toolbar:after {
-      clear: none !important;
-    }
-  </style>
-</head>
-<body>
-  <div id="app"></div>
-  <script
-    src="https://unpkg.com/react@18/umd/react.development.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    crossorigin
-  ></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script src="react-quill.js"></script>
-  <script type="text/babel" src="index.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Quill Editor</title>
+    <link rel="stylesheet" href="quill.snow.css" />
+    <style>
+      .ql-toolbar:after {
+        clear: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- React and ReactDOM -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Babel for JSX transpilation -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- React Quill (make sure it's hosted correctly or use CDN below) -->
+    <script src="react-quill.js"></script>
+    <!-- Alternative (CDN version for test): -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/react-quill@1.3.5/dist/react-quill.min.js"></script> -->
+
+    <!-- Your React JSX app -->
+    <script type="text/babel" src="index.js"></script>
+  </body>
+</html>
